@@ -1,0 +1,53 @@
+<!-- David Silva Vega -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación</title>
+    <link rel=stylesheet href="estilo.css">
+</head>
+<body id="altura"> 
+   <!-- En esta versión modifico la altura para comprobar los efectos de sticky y fixed -->
+    <main> <!-- Container general-->
+
+        <div class="left"> <!-- Container izquierda-->
+            <div class="text"> <!-- Container texto-->
+                <p class="ptext">Esto es un texto de prueba</p>
+                <p class="ptext">Esto es un texto de prueba</p>
+                <p class="ptext">Esto es un texto de prueba</p>
+
+            </div>
+            <div> <!-- Container formulario-->
+                <form>
+                    <label for="nombre">Nombre:</label> <br/><br/>
+                    <input type="text" name="nombre" class="inptext" maxlength="100"><br/><br/>
+
+                    <label for="correo">Correo:</label> <br/><br/>
+                    <input type="text" name="correo" class="inptext" maxlength="100"><br/><br/>
+
+                    <input type="submit" value="ENVIAR"></input>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="right"> <!-- Container derecha-->
+
+            <div class="sticky"> <!-- Container sticky-->
+                <p>Este contenedor tiene posicionamiento sticky.</p>
+            </div>
+            <div class="fixed"> <!-- Container fixed-->
+                <p>Este contenedor tiene posicionamiento fixed</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer> <!--Pie de página-->
+        <a>2022 - Ejercicio básico maquetaión</a>
+    </footer>
+
+</body>
+</html>

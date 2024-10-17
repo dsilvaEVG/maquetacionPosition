@@ -1,0 +1,125 @@
+/* David Silva Vega */
+
+/* Body completo */
+body{
+    background-color: tomato;
+    margin: 45px 0px 0px 0px; /* Margen superior 45px */
+    max-width: 1260px; /*Ancho maximo del html*/
+    height: 500px;
+    }
+
+/* main */
+main{
+    background-color: lightblue;
+    margin: 0px; /* Quitar márgenes*/ 
+    /*height: 400px;*/
+    width: 1260px;
+    display: flow-root;
+   }
+
+/* Div izquierda */
+.left {
+    float: left;
+    height: 370px; /*400px - 30px padding top*/
+    width: 780px; /*800px - 20px padding (left y right)*/
+    background-color: lightgreen;
+    margin: 0px 20px; /*Margen izq y dcho 20px*/
+    padding: 30px 10px 0px 10px; /*Padding 30px superior, 10px a los lados*/
+}
+
+/* Div derecha */
+.right{
+    position: relative;
+    float: left;
+    width: 370px; /*400px - 30px padding left*/
+    height: 350px; /*400px - 50px padding top*/
+    background-color: yellow;
+    margin: 0px 20px 0px 0px; /*margen solo derecha*/
+    padding-top: 50px; /*Padding superior 50px*/
+    padding-left: 30px; /*Padding izquierdo 30px */
+}
+
+/* Footer */
+footer{
+    clear: both; /*Maneja su situación respecto a los floats de los div*/
+    width: 1260px; /* Ancho del footer*/
+    height: 100px; /* Alto del footer*/
+    background-color: blueviolet;
+    margin: 0px; /* Sin márgenes*/
+}
+
+/* Contenedor de texto superior en el div left */
+.text{
+    width: 780px; /*800px de div left - 10px padding left - 10px padding right*/
+    margin: 0px 0px 4em 0px; /*margen abajo 4 veces tamaño de letra. Resto 0px*/
+    background-color: brown;
+   
+}
+/* Estilo del párrafo. Por defecto añade unos márgenes por arriba y por abajo */
+.ptext{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+/* Estilo del formulario */
+form{
+    background-color: brown;
+    padding-left: 70px;
+    padding-top: 1em; /*Tamaño de la letra para el padding superior*/
+    padding-bottom: 1em; /*Tamaño de la letra para el padding inferior*/
+    width: 710px; /*800px de div left - 10px padding left - 10px padding right - 70px padding form*/
+
+}
+
+/* Cajas de input text del formulario */
+.inptext{
+    padding-left: 10px; /* Separación con el borde izquierdo del input*/
+    padding-right: 0px; /*Padding right automático 2px*/
+    width: 486.8px; /*Ancho 500 px - padding left 10px - bordes 3.2px*/
+    height: 1.8em;
+}
+
+/* Características del botón */
+input[type="submit"]{
+    width: 150px;
+    height: 2em; /*Tamaño 2 veces la altura de la letra base (2x16px)*/
+    background-color: #d8d8d8;
+}
+
+/*Posicionamiento absolute (está en la caja derecha, pero pasa a otro plano su posicionamiento)*/
+div.absolute{
+    position: absolute;
+    left: 30px;
+    border: 3px solid black;
+    width: 150px;
+    top: 150px;
+}
+
+/*Posicionamiento fixed (se sitúa respecto a la caja derecha, pero se mantiene fija)*/
+div.fixed{
+    position: fixed;
+    top: 444px;
+    border: 3px solid black;
+}
+
+/*Posicionamiento relative (se sitúa respecto a la caja derecha, respetando su padding)*/
+div.relative{
+    position: relative;
+    left: 30px;
+    border: 3px solid black;
+    width: 150px;
+    top: 150px;
+}
+
+/*Posicionamiento sticky (actúa como fixed, pero no sale de su contenedor superior)*/
+div.sticky{
+    position: sticky;
+    left: 30px;
+    border: 3px solid black;
+    width: 150px;
+    top: 150px;
+}
+
+#altura{
+    height: 2500px;
+}
